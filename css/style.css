@@ -25,7 +25,7 @@
   max-width: 550px;
   margin: 0px auto;
   color: #b07810;
-  padding: 30px 0;
+  padding: 30px 30px;
   background: var(--tg-theme-text-bg-color);
  }
 
@@ -34,7 +34,7 @@
  }
 
  .form_item {
-   margin: 20px 0px 20px 0px;
+   margin: 0px 0px 20px 0px;
  }
 
  .form_label {
