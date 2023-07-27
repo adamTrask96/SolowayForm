@@ -54,7 +54,7 @@
      <script>
          let tg = window.Telegram.WebApp;
          let send = document.getElementById("send");
-        tg.expand();
+         tg.expand();
          
          send.addEventListener("click", () => {
              document.getElementById("error").InnerText = '';
@@ -64,18 +64,15 @@
              let countPeople = document.getElementById("formPeople").value;
              let messagePeople = document.getElementById("formMessage").value;
              let roomm = document.getElementById("formroom").value;
-             if (name.length < 2) {
-                 document.getElementById("error").innerText = 'Ошибка в имени';
-                 return;
-             }
-            let data = {
+            
+             let data = {
                 name: name,
                 number: number,
                 date: date,
                 countPeople: countPeople,
                 messagePeople: messagePeople,
                 room: room
-            }
+             }
              tg.sendData(JSON.stringify(data));
 
              
