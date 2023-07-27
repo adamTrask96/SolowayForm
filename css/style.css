@@ -21,11 +21,12 @@
 
  
   
- .form {
+  .form {
   max-width: 550px;
   margin: 0px auto;
-  color:var(--tg-theme-text-color);
+  color: #b07810;
   padding: 30px 0;
+  background: var(--tg-theme-text-bg-color);
  }
 
  .form * {
