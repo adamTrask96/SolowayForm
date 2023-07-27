@@ -56,26 +56,7 @@
          let send = document.getElementById("send");
          tg.expand();
          
-         send.addEventListener("click", () => {
-             
-             let name = document.getElementById("formName").value;
-             let number = document.getElementById("formNumber").value;
-             let date = document.getElementById("formDate").value;
-             let countPeople = document.getElementById("formPeople").value;
-             let messagePeople = document.getElementById("formMessage").value;
-             let room = document.getElementById("formroom").value;
-            
-             let data = {
-                name: name,
-                number: number,
-                date: date,
-                countPeople: countPeople,
-                messagePeople: messagePeople,
-                room: room
-              }
-             tg.sendData(JSON.stringify(data));
-
-             
+         send.addEventListener("click", () => {   
              tg.close();
           });
      </script>
