@@ -1,0 +1,136 @@
+ @font-face {
+    font-family: "Geometria"; 
+    src: url("//db.onlinewebfonts.com/t/108e791141b11fc8e78d2e77a8068a6b.eot"); 
+    src: url("//db.onlinewebfonts.com/t/108e791141b11fc8e78d2e77a8068a6b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/108e791141b11fc8e78d2e77a8068a6b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/108e791141b11fc8e78d2e77a8068a6b.woff") format("woff"), url("//db.onlinewebfonts.com/t/108e791141b11fc8e78d2e77a8068a6b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/108e791141b11fc8e78d2e77a8068a6b.svg#Geometria") format("svg"); 
+  }
+  
+ *,*:before,*:after {
+  padding: 0;
+  margin: 0;
+  
+  box-sizing: border-box;
+ }
+
+  body {
+    font-family: Geometria, Arial, sans-serif;
+    color: var(--tg-theme-text-color);
+    background: var(--tg-theme-text-bg-color);
+    
+    
+  }
+
+ 
+  
+ .form {
+  max-width: 550px;
+  margin: 0px auto;
+  color:var(--tg-theme-text-color);
+  padding: 30px 0;
+ }
+
+ .form * {
+  outline: none;
+ }
+
+ .form_item {
+   margin: 0px 0px 20px 0px;
+ }
+
+ .form_label {
+  font-size: 18px;
+  display:block;
+  margin: 0px 0px 10px 0px;
+ }
+
+.form_input {
+  height: 50px;
+  padding:0px 20px;
+  border-radius: 5px;
+  width: 400px;
+  font-size: 18px;
+  transition: all 0.5s ease 0s;
+}
+
+.form_input:focus {
+  box-shadow: 0 0 15px #b28738;
+}
+
+ textarea.form_input {
+  min-height: 120px;
+  resize: vertical;
+  padding: 20px;
+ }
+
+ 
+
+ .checkbox_input {
+  display: none;
+ }
+
+ .checkbox_input:checked + .checkbox_label::after {
+  transform: scale(1);
+ }
+
+ .checkbox_label {
+  font-size: 16px;
+  line-height: 140%;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+ .checkbox_label::before {
+  content: "";
+  align-self: flex-start;
+  flex: 0 0 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 0px 10px 0px 0px;
+ }
+
+ .checkbox_label::after {
+  transition: transform  0.5s ease 0s;
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top:4px;
+  left:4px;
+  background-color: #D09E3F;
+  border-radius: 4px;
+  transform: scale(0);
+ }
+
+ .form_button {
+  width: 145px;
+  display:flex;
+  align-items: center;
+  min-height: 60px;
+  background-color:#D09E3F;
+  color:var(--tg-theme-button-color);
+  padding: 5px 5px 5px 5px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 5px 0 #3d2c0b;
+  transition: background-color 0.5s ease 0s;
+  position: relative;
+  top: 0;
+ }
+
+ .form_button:hover{
+  background-color:#b28738
+ }
+ 
+ .form_button:active {
+  top: 3px;
+  box-shadow: 0 2px 0 #3d2c0b;
+ }
+
+ 

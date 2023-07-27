@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Soloway-club</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, manimum-scale=1.0">
+    </head>
+    <body>
+        
+                <div class="form">
+                  <form  method="POST" id="form" class="form_body">
+                    <h1 class="popup_title">Оставьте вашу заявку, администратор свяжется с вами</h1>
+                    <div class="form_item">
+                      <label for="formName" class="form_label">Введите своё ФИО*</label>
+                      <input id="formName" type="text" name="name" placeholder="Например, Иван" class="form_input">
+                    </div>
+                    <div class="form_item">
+                      <label for="formNumber" class="form_label">Введите номер телефона*</label>
+                      <input id="formNumber" type="text" name="number" placeholder="+7 (999) 99 99 999" class="form_input">
+                    </div>
+                    <div class="form_item">
+                      <label for="formDate" class="form_label">Введите дату и время*</label>
+                      <input id="formDate" type="text" name="date" placeholder="20.01.2023 21:00" class="form_input">
+                    </div>
+                    <div class="form_item">
+                      <label for="formPeople" class="form_label">Сколько вас будет человек?*</label>
+                      <input id="formPeople" type="text" name="people" class="form_input">
+                    </div>
+                    <div class="form_item">
+                      <label for="formMessage" class="form_label">Дополнительный комментарий</label>
+                      <textarea name="message_com" id="formMessage" class="form_input"></textarea>
+                    </div>
+                    <div class="form_item">
+                      <div class="form_label">В каком зале желаете отдыхать?</div>
+                      <select name="room" id="formroom" class="select">
+                        <option value="1" selected="selected">Караоке</option>
+                        <option value="2" selected="selected">Танцпол</option>
+                      </select>
+                    </div>
+                    <div class="form_item">
+                      <div class="checkbox">
+                        <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox_input">
+                        <label for="formAgreement" class="checkbox_label"><span>Я даю своё согласие на обработку персональных данных в соотвествии с условиями </span></label>
+                      </div>
+                    </div>
+                    <div id="success" class="alert alert-success" role="alert" style="display: none;"></div>
+                    <button type="submit" class="form_button">Отправить</button>
+                  </form>
+                </div>
+                
+    </body>
