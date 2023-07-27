@@ -46,7 +46,7 @@
             </div>
             <div id="success" class="alert alert-success" role="alert" style="display: none;"></div>
             
-            <button type="submit" id="send" class="form_button">Отправить</button>
+            <button  id="send" class="form_button">Отправить</button>
           </form>
             
         </div>
@@ -72,11 +72,11 @@
                 countPeople: countPeople,
                 messagePeople: messagePeople,
                 room: room
-             }
+              }
              tg.sendData(JSON.stringify(data));
 
              
              tg.close();
-         });
+          });
      </script>
     </body>
