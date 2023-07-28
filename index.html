@@ -13,11 +13,11 @@
             <h1 class="popup_title">Оставьте вашу заявку, администратор свяжется с вами</h1>
             <div class="form_item">
               <label for="formName" class="form_label">Введите своё ФИО*</label>
-              <input id="formName" type="text" name="name" placeholder="Например, Иван" class="form_input">
+              <input id="formName" type="text" name="name" placeholder="Например,  Иванов Иван" class="form_input">
             </div>
             <div class="form_item">
               <label for="formNumber" class="form_label">Введите номер телефона*</label>
-              <input id="formNumber" type="tel" name="number" placeholder="+7 (999) 99 99 999" class="form_input">
+              <input id="formNumber" type="tel" name="number" placeholder="+7 (999) 99 99 999" class="form_input art-stranger">
             </div>
             <div class="form_item">
               <label for="formDate" class="form_label">Введите дату и время*</label>
@@ -25,7 +25,7 @@
             </div>
             <div class="form_item">
               <label for="formPeople" class="form_label">Сколько вас будет человек?*</label>
-              <input id="formPeople" type="text" name="people" class="form_input">
+              <input id="formPeople" type="text" name="people" placeholder="Например, 5 человек" class="form_input">
             </div>
             <div class="form_item">
               <label for="formMessage" class="form_label">Дополнительный комментарий</label>
@@ -77,4 +77,26 @@
           });
      </script>
     <script>document.getElementById('davaToday').valueAsDate = new Date();</script>
+    <script src="maska-nomera.js" type="text/javascript" ></script>
+
+      <script>
+    $('.art-stranger').mask('+7 (999) 999-99-99');
+
+    $.fn.setCursorPosition = function(pos) {
+      if ($(this).get(0).setSelectionRange) {
+        $(this).get(0).setSelectionRange(pos, pos);
+      } else if ($(this).get(0).createTextRange) {
+        var range = $(this).get(0).createTextRange();
+        range.collapse(true);
+        range.moveEnd('character', pos);
+        range.moveStart('character', pos);
+        range.select();
+      }
+    };
+
+
+    $('input[type="tel"]').click(function(){
+        $(this).setCursorPosition(4);  // set position number
+      });
+    </script>
     </body>
