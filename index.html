@@ -20,12 +20,8 @@
               <input id="formNumber" type="tel" name="number" placeholder="+7 (999) 999 99 99"  class="form_input art-stranger">
             </div>
             <div class="form_item">
-              <label for="formDate" class="form_label">Введите дату*</label>
+              <label for="formDate" class="form_label">Введите дату и время*</label>
               <input id="formDate" type="datetime-local" name="date"  class="form_input">
-            </div>
-            <div class="form_item">
-              <label for="formTime" class="form_label">Введите время*</label>
-              <input id="formTime" type="time" name="time"  class="form_input">
             </div>
             <div class="form_item">
               <label for="formPeople" class="form_label">Сколько вас будет человек?*</label>
@@ -64,7 +60,6 @@
              let name = document.getElementById("formName").value;
              let number = document.getElementById("formNumber").value;
              let date = document.getElementById("formDate").value;
-             let date = document.getElementById("formTime").value;
              let countPeople = document.getElementById("formPeople").value;
              let messagePeople = document.getElementById("formMessage").value;
              let room = document.getElementById("formroom").value;
@@ -73,7 +68,6 @@
                 name: name,
                 number: number,
                 date: date,
-                time: time,
                 countPeople: countPeople,
                 messagePeople: messagePeople,
                 room: room
